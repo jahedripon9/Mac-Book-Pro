@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro Purchase</title>
+
+    <!-- Using Tailwind via CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Plain CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <section>
+        <div class="mac-book-info flex m-10 ">
+            
+            <!-------- Image Area -------->
+            <div class="mac-img px-10">
+                <img src="images/mac.png" alt="">
+            </div>
+
+            <!-------- Purchase Information Area -------->
+            <div class="mac-purchase-info mr-5">
+                <h1 class="text-5xl pb-5">Customize your Blue 24-inch iMac with Apple M1 chip. </h1>
+                <h5 class="text-1xl text-gray-500 mb-5">Apple M1 Chip with 8-core CPU with 4 performance cores and efficieny cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Keybord - US English. </h5>
+                
+                <!--------Memory Purchase Area -------->
+                <div class="memory py-2">
+                    <h3 class="text-1xl font-bold py-2">Memory</h3>
+                    <button id="memory8gb" class="border p-3 rounded-2xl hover:bg-black hover:text-white">8GB unified memory</button>
+                    <button id="memory16gb" class="border p-3 rounded-2xl hover:bg-black hover:text-white" >16GB unified memory</button>
+                </div>
+
+                <!--------Storage Purchase Area -------->
+                <div class="storage py-2">
+                    <h3 class="text-1xl font-bold py-2">Storage</h3>
+                    <button id="storage256gb" class="border p-3 rounded-2xl hover:bg-black hover:text-white">256GB SSD storage</button>
+                    <button id="storage512gb" class="border p-3 rounded-2xl hover:bg-black hover:text-white">512GB SSD storage</button>
+                    <button id="storage1tb" class="border p-3 rounded-2xl hover:bg-black hover:text-white">1TB SSD storage</button>
+                </div>
+
+                <!--------Delivery Area -------->
+                <div class="delivery-option">
+                    <h3  class="text-1xl font-bold py-2">Choose your delivery option</h3>
+                    <button id="freeDelivery" class="border p-3 rounded-2xl hover:bg-black hover:text-white">Friday, Aug 25 Free Prime Delivery</button>
+                    <button id="chargeDelivery" class="border p-3 rounded-2xl hover:bg-black hover:text-white">Friday, Aug 21 Delivery charge $20</button>
+                </div>
+
+                <!--------Calculation Area -------->
+                <div class="price-cost-list flex ">
+                    <div class="price-info mt-10">
+                        <h5 class="font-bold">Best Price</h5>
+                        <hr class="py-2">
+                        <h5 class="font-bold">Extra Memory Cost</h5>
+                        <hr class="py-2">
+                        <h5 class="font-bold">Extra Storage Cost</h5>
+                        <hr class="py-2">
+                        <h5 class="font-bold">Delivery Charge</h5>
+                        <hr class="py-2">
+                        <h5 class="font-bold text-2xl ">Total Price</h5>
+                        <hr class="py-2">
+                    </div>
+                    <div class="cost-list m-10">
+                        <h5 class="font-bold">$<span id="bestPrice">1299</span></h5>
+                        <hr class="py-2">
+                        <h5 class="font-bold">$<span id="extraMemoryCost">0</span></h5>
+                        <hr class="py-2">
+                        <h5 class="font-bold">$<span id="extraStorageCost">0</span></h5>
+                        <hr class="py-2">
+                        <h5 class="font-bold">$<span id="deliveryCost">0</span></h5>
+                        <hr class="py-2 ">
+                        <h5 class="font-bold text-2xl text-red-600">$<span id="totalPrice">1299</span></h5>
+                        <hr class="py-2">
+                    </div>
+                </div>
+
+                <!--------Pomo Code Area -------->
+                <div class="pomo-code">
+                    <h3 class="text-1xl font-bold py-1">Add Pomo Code</h3>
+                    <input id="input-pomo" class="border-2 rounded-2xl py-2" type="text">
+                    <button id="submit-pomo" class="bg-red-500 py-2 px-4 rounded-2xl text-white font-bold">Apply</button>
+                </div>
+            </div>
+        </div>
+
+        <!--------Intotal Price Area -------->
+        <hr class="py-2">
+        <h1 class="text-4xl font-bold text-blue-500 text-center mb-10">Total: $<span id="inTotalPrice">1299</span></h1>
+    </section>
+    <script src="js/app.js"></script>
+</body>
+</html>
